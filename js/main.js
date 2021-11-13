@@ -6,14 +6,14 @@ let gameView = new GameView(document.getElementById('app'))
 
 
 //define function
-gameView.onTileClick = function (i) {
+gameView.onTileClick = function (i) { // принимает индекс ячейки
     game.makeMove(i)
     gameView.update(game)
 
 }
 gameView.onRestartClick = function () {
     game = new Game()
-   gameView.update(game)
+    gameView.update(game)
 }
 
 gameView.update(game)
